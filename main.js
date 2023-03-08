@@ -31,3 +31,7 @@ const team = [
     }
 ];
 
+for (let index = 0; index < team.length; index++) {
+    const element = team[index];
+    console.log(element.name, element.role, element.picture);
+}
