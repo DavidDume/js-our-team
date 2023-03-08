@@ -1,3 +1,5 @@
+const container = document.querySelector('.container');
+
 const team = [
     {
         name: "Wayne Barnett",
@@ -34,4 +36,11 @@ const team = [
 for (let index = 0; index < team.length; index++) {
     const element = team[index];
     console.log(element.name, element.role, element.picture);
+    container.innerHTML += `
+    <div class="card">
+        <h2>${element.name}</h2>
+        <h3>${element.role}</h3>
+        <img src="./img/${element.picture}" alt="team">
+    </div>
+    `
 }
